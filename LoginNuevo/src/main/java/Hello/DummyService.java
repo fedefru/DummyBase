@@ -6,7 +6,9 @@ import org.springframework.stereotype.Service;
 public class DummyService {
 		
 	public boolean getAtribute(String user, String pass) {
-		return (DummyBase.getMap().containsKey(user) && DummyBase.getMap().containsValue(pass));
+		
+		return DummyBase.getMap().get(user).equals(pass);
+//		return (DummyBase.getMap().containsKey(user) && DummyBase.getMap().containsValue(pass));
 	
 }
 }

@@ -1,4 +1,5 @@
 package Hello;
+import java.util.HashMap;
 import java.util.Map;
 
 
@@ -8,6 +9,9 @@ public class DummyBase {
 	private static Map<String,String> mapa;
 	
 	static {
+		
+		mapa = new HashMap<String, String>();
+		
     mapa.put("fede", "1234");
     mapa.put("mario", "4321");
     mapa.put("chile", "1234");
